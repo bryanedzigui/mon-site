@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux Noël et Bonne Année</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff0000;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        p {
+            font-size: 1.5rem;
+            color: #008000;
+            text-align: center;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Animation de fade-in */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Joyeux Noël et Bonne Année !</h1>
+    <p>Nous vous souhaitons de belles fêtes de fin d'année, pleines de joie et de bonheur !</p>
+    <button onclick="afficherMessage()">Cliquez ici pour un message spécial</button>
+
+    <script>
+        function afficherMessage() {
+            alert("Joyeux Noël et Bonne Année en avance ! Que cette année vous apporte tout ce que vous souhaitez !");
+        }
+    </script>
+
+</body>
+</html>
